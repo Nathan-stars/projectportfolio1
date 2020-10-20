@@ -1,59 +1,64 @@
-body{
-    font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,700&display=swap');
+
+body {
+    font-family: lato, sans-serif;
+    overflow-x: hidden;
+    color: #505962;
     background-image: url(../images/office.jpg);
-    background-size: cover;
-    background-position: center;
 }
-h1, h2, h3{
-    font-family: "Lobster", cursive;
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: -9rem;
+    letter-spacing: .1rem;
+    background: rgba(0,0,0,0.6);
 }
-* {
-    padding: 100;
-    margin: 100;
-    box-sizing: border-box;
-}
-.menu-bar{
-    background: rgd(0,100,0);
-    text-align: center;
-}
-.menu-bar ul{
-    display: inline-flex;
-    list-style: none;
-    color: #fff;
-}
-menu-bar ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-.active, menu-bar ul li:hover{
-    background: #2bab0d;
-    border-radius: 3px;
-}
-.box{
-    background-image: url(../images/office.jpg);
-    margin: 1px 1px;
-    padding: 100px;
-}
-.menu-bar ul li{
-    width: 120px;
-    margin: 15px;
-    padding: 15px;
-}
-.menu-bar .fa{
-    margin-right: 8px;
-}
-.sub-menu-1{
-    display: none;
-}
-.menu-bar ul li:hover .sub-menu-1{
-    display: block;
+ .navbar-nav li {
+     padding-right: 7rem;
+ }
+ .navbar-nav li {
+     padding-right: .7rem;
+ }
+ .navbar-dark .navbar-nav .nav-link {
+     color: white;
+     padding-top: 8rem;
+ }
+ .navbar-dark .navbar-nav .nav-link .active
+ .navbar-dark .navbar-nav .nav-link:hover {
+     color: #1ebba3;
+ }
+.caption {
+    width: 100%;
+    max-width: 100%;
     position: absolute;
-    background: rgb(0,100,0);
-    margin-top: 15px;
-    margin-left: -15px;
+    top: 38%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
 }
-.menu-bar ul li:hover .sub-menu-1 ul{
-    display: block;
-    margin: 10px;
+.caption h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem rgb(0, 0, 0);
+    padding-bottom: 1rem;
+    color: blue
+}
+.caption h2 {
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+    color: blue
+}
+.btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+}
+background-image {
+    background-attachment: fixed;
+    background-size: cover;
 }
 
+ 
